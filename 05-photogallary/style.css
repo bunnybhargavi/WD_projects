@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .column:nth-child(1){
+  background-color: aqua;
+}
+.column:nth-child(2){
+  background-color: rgb(217, 172, 114);
+}
+.column:nth-child(3){
+  background-color: rgb(232, 65, 204);
+}
+.column:nth-child(4){
+  background-color: rgb(79, 198, 55);
+} */
+.column{
+  flex: 1;
+  min-width: 300px;
+}
+img{
+  width:100%;
+}
