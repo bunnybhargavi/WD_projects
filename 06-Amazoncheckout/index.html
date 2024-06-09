@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Checkout</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <form>
+
+    <div class="container">
+      <div class="details">
+        <div class="address">
+          <div class="sub-form">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" size="30px" placeholder="Address" maxlength="100">
+          </div>
+          <div class="sub-form">
+            <label for="postcode">Postcode:</label>
+            <input type="text" name="postcode" id="postcode" size="30px" placeholder="Postcode" maxlength="10">
+          </div>
+          <div class="sub-form">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" size="30px" placeholder="City" maxlength="40">
+          </div>
+        </div>
+        <div class="shipping">
+          <div>Choose your shipping method:</div>
+          <div>
+            <select name="shipping" id="shipping">
+              <option value="free super save shipping">Free super save shipping</option>
+              <option value="one-day shipping">One-day shipping</option>
+              <option value="two-day shipping">Two-day shipping</option>
+            </select>
+          </div>
+        </div>
+        <div class="payment">
+          <div>Choose your Payment method:</div>
+          <div>
+            <label><input type="radio" value="paypal" name="paypal" >Paypal</label>
+            <label><input type="radio" value="credit card" name="credit card" >Credit Card</label>
+            <label><input type="radio" value="debit card" name="debit card" >Debit Card</label>
+          </div>
+        </div>
+        <div class="checks">
+          <label>securely save my payment details <input type="checkbox" name="payment details" checked="checked"></label>
+          <label>sign me up for Email updates <input type="checkbox" name="email updates" checked="checked"></label>
+        </div>
+      </div>
+      <div class="comments">
+        <label for="commets">Commets:</label>
+        <textarea rows="3" cols="30" name="commets" id="commets"></textarea>
+      </div>
+    </div>
+
+    <div class="submit">
+      <button type="submit">Submit</button>
+    </div>
+  
+  </form>
+
+</body>
+</html>
