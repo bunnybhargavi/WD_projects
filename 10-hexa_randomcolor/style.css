@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Nanum+Gothic&display=swap');
+
+#container{
+  height:100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
+#hex-code{
+  text-align: center;
+}
+#hex-code h1{
+  font-size: 2rem;
+  padding: 10px;
+  text-transform: uppercase;
+  animation: changeColor 5s infinite alternate;
+}
+@keyframes changeColor{
+  0%{
+    color:rgb(255, 0, 217);
+  }
+  20%{
+    color:rgb(0, 76, 255);
+  }
+  40%{
+    color:rgb(0, 247, 255);
+  }
+  60%{
+    color:rgb(26, 255, 0);
+  }
+  80%{
+    color:rgb(255, 242, 0);
+  }
+  100%{
+    color:rgb(255, 0, 0);
+  }
+}
+#hex-code h2{
+  margin-top: 50px;
+  padding: 10px;
+}
+@media(max-width:480px){
+  #hex-code h1{
+    font-size: 1rem;
+  }
+  #hex-code h2{
+    font-size: 1rem;
+  }
+}
+#button{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 2.5px black;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+#button:hover{
+  opacity: 1;
+}
+#button:active{
+  background-color: white;
+  transform: scale(1.2);
+  color:black;   
+}
