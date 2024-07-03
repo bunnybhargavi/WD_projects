@@ -1,0 +1,26 @@
+#container{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container > button{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 2.5px black;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3;
+  border-radius: 5px;
+}
+#container > button:hover{
+  opacity: 1;
+}
+#container > button:active{
+  background-color: white;
+  transform: scale(1.2);
+  color:black;   
+}
