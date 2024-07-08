@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+  background: linear-gradient(rgb(237, 187, 233),rgb(206, 230, 235));
+  background: -webkit-linear-gradient(rgb(237, 187, 233),rgb(206, 230, 235)); 
+  background: -moz-linear-gradient(rgb(237, 187, 233),rgb(206, 230, 235)); 
+  background: -o-linear-gradient(rgb(237, 187, 233),rgb(206, 230, 235));  
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.button{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px 0px 0px 5px;
+  border: 2px solid rgb(211, 209, 209);
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.btn{
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+#container{
+  border: 1px solid black;
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content{
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(251, 243, 243);
+}
+#para1{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(205, 200, 200 ,0.5);
+}
+/* .para{
+  margin:0px;
+} */
+#message{
+  padding: 10px;
+  width: 80%;
+  border-radius: 0px 5px 5px 0px;
+  border: 2px solid rgb(211, 209, 209);
+  border-left: 0px;
+}
+#para3{
+  text-align: center;
+  text-transform: uppercase;
+}
+@media(max-width:480px){
+  #message{
+    width: 70%;
+  }
+}
+@media(max-width:320px){
+  #message{
+    width: 60%;
+  }
+}
