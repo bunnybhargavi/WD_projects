@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+body{
+  font-family: "Kalam", cursive;
+}
+#container{
+  width: 95%;
+  margin: auto;
+  height:100vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(from .5turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
+}
+#clock{
+  display: flex;
+  width: auto;
+  padding: 20px;
+  background: conic-gradient(at top right, slategray, white);
+  box-shadow:2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+#clock h1{
+  margin-left: 15px;
+  font-size: 70px;
+  font-weight: lighter;
+}
+@media(max-width:768px){
+  #clock h1{
+    font-size: 50px;
+    width: 100%;
+  }
+}
+@media(max-width:480px){
+  #clock h1{
+    font-size: 30px;
+    width: 100%;
+  }
+}
+@media(max-width:320px){
+  #clock h1{
+    font-size: 17px;
+    width: 100%;
+  }
+}
