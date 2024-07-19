@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body{
+  font-family: "Dancing Script", cursive;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.container{
+  height: 100vh;
+  background: linear-gradient(lightblue,rgb(244, 165, 226));
+}
+.content{
+  border: 1px solid black;
+  width:50%;
+  margin: auto;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: conic-gradient(at 0% 0%, snow, white);
+  border-radius: 10px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.listitems h1{
+  margin-top: 0px;
+  font-size: 70px;
+}
+.listitems i{
+  font-size: 40px;
+  color: rgb(41, 195, 246);
+  cursor: pointer;
+}
+.listitems input{
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  width: 70%;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  user-select: none;
+}
+#allitems h2{
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+img{
+  margin-top: 60px;
+  opacity: 0.5;
+  user-select: none;
+} 
+@media(max-width:780px){
+  .content{
+    width: 70%;
+  }
+  .listitems h1{
+    font-size: 50px;
+  }
+} 
+@media(max-width:480px){
+  .content{
+    width: 85%;
+  }
+  .listitems h1{
+    font-size: 40px;
+  }
+  .listitems input{
+    width: 65%;
+  }
+}
+@media(max-width:320px){
+  .content{
+    width: 90%;
+  }
+  .listitems h1{
+    font-size: 30px;
+  }
+}
