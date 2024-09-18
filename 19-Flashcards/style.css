@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Raleway", sans-serif;
+  background: conic-gradient(from .5turn at bottom center, lightblue, white);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.container{
+  width: 95%;
+  margin:auto;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.nav h1{
+  color: rgb(245, 71, 193);
+}
+button{
+  padding: 7px;
+  margin: 3px;
+  outline: none;
+  border: 1px solid grey;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover{
+  background-color: rgba(0,0,0,0.1);
+  transform: scale(1.2);
+}
+.box{
+  width: 370px;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+}
+textarea{
+  width:100%;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.flashcard{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.flashcards h2{
+  font-size: 1rem;
+}
+.flashcards{
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+@media(max-width:1024px){  
+  .flashcards{
+    margin: auto;
+  }
+  .flashcards{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media(max-width:480px){
+  .nav{
+    flex-direction: column;
+    text-align: center;
+  }
+  .box{
+    width: 95%;
+  }
+  .flashcards{
+    width: 100%;
+  }
+}
