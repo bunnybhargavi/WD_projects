@@ -1,0 +1,83 @@
+body{
+  font-family: arvo, serif;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/013/087/516/non_2x/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+}
+.navbar{
+  opacity: 0.6;
+  padding: 2px 5px 0px 30px
+}
+.nav-item{
+  padding: 2px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ff0000;
+}
+.nav-item :hover{
+  border-bottom: 2px solid blue;
+  cursor: pointer;
+}
+.navbar-toggle{
+  float: right;
+}
+.feature{
+  padding-top: 50px;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+} 
+.btn{
+  background-color: rgb(168, 236, 236);
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 90px;
+}
+.footer{
+  text-align: center;
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+  padding: 10px;
+  font-size: 20px;
+}
+@media(max-width:768px){
+  .feature{
+    font-size: 40px;
+  }
+}
+@media(max-width:480px){
+  .feature{
+    font-size: 30px;
+  }
+  .about{
+    flex-direction: column;
+  }
+}
