@@ -1,0 +1,194 @@
+#bgvideo{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+#mynav{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  opacity: 0.8;
+}
+.name{
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 30px;
+}
+a:not([href]):not([tabindex]) {
+  color: white;
+}
+a:not([href]):not([tabindex]):hover {
+  color: white;
+}
+.navbar-light .navbar-toggler {
+  color: white;
+}
+.navbar-toggler {
+  background-color: rgba(251, 243, 243, 0.623);
+}
+.navbar-light .navbar-nav .nav-link {
+  padding-right: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+#home{
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 30px;
+}
+#home h2{
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.h1, h1 {
+  font-weight: 350;
+  font-size: 4rem;
+}
+.h2, h2 {
+  font-weight: 250;
+  font-size: 2rem;
+}
+#home .btn{
+  background-color: rgb(29, 142, 179);
+  font-size: 20px;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+#home .btn:hover{
+  background-color: rgba(29, 142, 179,0.5);
+}
+.container{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+#about{
+  padding: 100px;
+}
+.col-lg-4 h3{
+  padding-top: 15px;
+}
+.col-lg-4{
+  padding: 20px;
+}
+.carousel-inner {
+  text-align: center;
+}
+#myCarousel{
+  width: 55%;
+  margin: 0 auto;
+}
+.carousel-inner .carousel-item img{
+  height: 400px;
+  margin: 0 auto;
+}
+.carousel-caption{
+  position: relative;
+  left: auto;
+  right: auto;
+  height: 150px;
+}
+#contact{
+  padding-bottom: 100px;
+  padding-top: 150px;
+}
+#contact h1{
+  padding-bottom: 50px;
+}
+label {
+  float: left;
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.form-group {
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+.footer{
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0,0.5);
+  padding: 10px;
+  font-size: 20px;
+}
+@media(max-width:1024px){
+  .carousel-inner .carousel-item img{
+    width: 100%;
+  }
+  #myCarousel {
+    width: 70%;
+ }
+}
+@media(max-width:768px){
+  .h1, h1 {
+    font-size: 3rem;
+  }
+  .h2, h2 {
+    font-size: 1.5rem;
+  }
+  .carousel-inner .carousel-item img{
+    height: 300px;
+    margin: 0 auto;
+  }
+  #myCarousel {
+    width: 80%;
+ }
+}
+@media(max-width:480px){
+  .h1, h1 {
+    font-size: 2.5rem;
+  }
+  .h2, h2 {
+    font-size: 1rem;
+  }
+  #about{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  #explore{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #myCarousel {
+    width: 90%;
+ }
+}
+@media(max-width:320px){
+  .name{
+    font-weight: 500;
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  #myCarousel {
+    width: 95%;
+ }
+ .carousel-caption{
+  height: 200px;
+}
+.carousel-inner .carousel-item img{
+  height: 250px;
+}
+#explore{
+  padding-top: 5px;
+}
+#contact{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 40px;
+}
+#contact h1{
+  padding-bottom: 20px;
+}
+}
+  
