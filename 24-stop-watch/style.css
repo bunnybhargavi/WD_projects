@@ -1,0 +1,104 @@
+body{
+  background: url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+}
+h1{
+  text-align: center;
+  font-size: 4vw;
+  background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  -webkit-text-fill-color: transparent; 
+  background-clip: content-box;
+  -webkit-background-clip: text;
+}
+#lap{
+  text-align: right;
+  font-size: 2vw;
+}
+#time{
+  text-align: center;
+  font-size: 7vw;
+}
+#controlConatainer{
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+#btn1{
+  margin-right: 40px;
+}
+#btn2{
+  margin-left: 40px;
+}
+.controls{
+  color: white;
+  background-color: rgb(239, 74, 126);
+  border-radius: 100%;
+  cursor: pointer;
+  height: 5vw;
+  width: 5vw;
+  text-align: center;
+  padding: 30% 0;
+  font-size: 1.2vw;
+}
+.controls:active{
+  background-color: white;
+  color: rgb(239, 74, 126);
+  transform: scale(1.2);
+}
+#lapnote{
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.lap{
+  height: 50px;
+  border-bottom: 1px solid white;
+  margin: 15px;
+}
+.lapcount{
+  font-size: 1.5em;
+  float: left;
+}
+.laptime{
+  font-size: 2em;
+  float: right;
+}
+
+.button {
+  border: 3px solid transparent; 
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: rgb(240, 240, 104);
+  }
+  50% {
+    border-color: green;
+  }
+  75% {
+    border-color: rgb(13, 137, 232);
+  }
+  100% {
+    border-color: rgb(223, 6, 223);
+  }
+}
+
+
+.button:active {
+  animation: borderAnimation 3s infinite; 
+  box-shadow: 1px 1px black;
+}
+.button:hover {
+  animation: borderAnimation 3s infinite; 
+  box-shadow: 1px 1px black;
+}
+
