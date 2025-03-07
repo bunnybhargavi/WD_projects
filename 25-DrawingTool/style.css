@@ -1,0 +1,144 @@
+body{
+  text-align: center;
+  background: url(image.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+h1{
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+
+.inputcontainer{
+  width: 200px;
+  margin-top: 150px;
+  text-align: left;
+  padding: 10px;
+  margin-left: 80px;
+}
+.slidecontainer {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.slider {
+  -webkit-appearance: slider-vertical;
+  width: 8px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(11, 142, 250);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:rgb(11, 142, 250) ;
+  cursor: pointer;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 12px;
+  transform: rotate(-90deg);
+}
+#pointer{
+  height: 30px;
+  font-size: 1.3rem;
+  width: 200px;
+}
+#circle{
+  margin-top: 30px;
+  margin-left: 130px;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s;
+  
+}
+#container{
+  background-color: white;
+  border: 1px solid rgb(17, 241, 238);
+  box-shadow: 0 4px 8px 0 rgb(17, 241, 238,0.19), 0 6px 20px 0 rgba(17, 241, 238, 0.19);
+  height: 480px;
+  width: 700px;
+  position: absolute;
+	top: 150px;
+  left: 310px;
+  z-index: 10;
+}
+#drawing{
+  background-color: white;
+  cursor: crosshair;
+}
+.drawtool{
+  position: relative;
+}
+.buttons{
+  margin-top: 280px;
+  display: flex;
+  justify-content: center;
+}
+.btns{
+  margin-right: 45px;
+  margin-left: 55px;
+  text-align: center;
+  font-size: 30px;
+  padding: 3px 8px;
+  border: 1px solid black;
+  box-shadow: 0 4px  rgb(0, 0, 0,0.2);
+  cursor: pointer;
+}
+.btns:hover{
+  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+.eraseMode{
+  background-color: red;
+  color: white;
+}
+@media(max-width:1024px){
+  #container{
+    height: 400px;
+    width: 500px;
+    left: 230px;
+  }
+  .buttons{
+    justify-content: space-evenly;
+  }
+}
